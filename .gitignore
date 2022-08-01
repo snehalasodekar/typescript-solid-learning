@@ -1,3 +1,7 @@
+.idea
+package.json
+tsconfig.json
+
 # Logs
 logs
 *.log
