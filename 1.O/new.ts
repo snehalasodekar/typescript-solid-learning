@@ -131,8 +131,7 @@ zoo.addAnimal(new Parrot('Henry'));
 zoo.addAnimal(new Penguin('Skipper'));
 
 console.log(zoo)
-
+const el = <HTMLElement>document.querySelector('#target');
 zoo.animals.forEach((animal) => {
-    console.log(animal);
-    document.querySelector('#target').innerHTML += (animal.type + ": " + animal.makeSound() + "<br>");
+    el.innerHTML += (animal.name + ": " + animal.makeSound() + "<br>");
 });
