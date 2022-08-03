@@ -1,5 +1,5 @@
 # typescript-solid-learning
-Learn typescript SOLID principles &amp;&amp; 4 pillers of OOP
+Learn typescript SOLID principles &amp;&amp; 4 pillars of OOP
 
 ## Goal
 Continuous reading and implementation of the understood concepts.
@@ -80,7 +80,7 @@ That means abstraction hides all the unnecessary steps and allows user by provid
 “There should never be more than one reason for a class to change.”  
   [SRP Readme]()
 
-- **O** **:** Open-Close Principle (OCP)
+- **O** **:** Open-Close Principle (OCP) Abstraction/Interface
 “Software entities … should be open for extension, but closed for modification.”  
     [OCP Readme]()
 
