@@ -78,23 +78,22 @@ That means abstraction hides all the unnecessary steps and allows user by provid
 ### SOLID 
 - **S** **:** Single Responsibility Principle (SRP)
 “There should never be more than one reason for a class to change.”  
-  [SRP Readme]()
+  [SRP Readme](https://github.com/SnehalChetan/typescript-solid-learning/tree/main/0.S)
 
 - **O** **:** Open-Close Principle (OCP) Abstraction/Interface
 “Software entities … should be open for extension, but closed for modification.”  
-    [OCP Readme]()
+    [OCP Readme](https://github.com/SnehalChetan/typescript-solid-learning/tree/main/1.O) 
 
 - **L** **:** Liskov Substitution Principle (LSP)
 “Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.”    
-    [LSP Readme]()
+    [LSP Readme](https://github.com/SnehalChetan/typescript-solid-learning/tree/main/2.L)
 
 - **I** **:** Interface Segregation Principle
 “Many client-specific interfaces are better than one general-purpose interface.”
-  [SRP Readme]()
+  [SRP Readme](https://github.com/SnehalChetan/typescript-solid-learning/tree/main/3.I)
 
 - **D** **:** Dependency Inversion Principle (DIP)
 “Depend upon abstractions, [not] concretions.”
-  
-    [DIP Readme]()
+  [DIP Readme](https://github.com/SnehalChetan/typescript-solid-learning/tree/main/4.D)
 
 

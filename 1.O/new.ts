@@ -1,4 +1,4 @@
-interface IMakesSound {
+interface IMakesSound extends AnimalName{
     makeSound: () => string;
 }
 
@@ -6,7 +6,7 @@ class Dog implements IMakesSound{
     private _name : string;
     private _type : string;
 
-    constructor(value) {
+    constructor(value:string) {
         this._name = value;
         this._type = 'dog';
     }
@@ -29,7 +29,7 @@ class Cat implements IMakesSound {
     private _name : string;
     private _type : string;
 
-    constructor(value) {
+    constructor(value : string) {
         this._name = value;
         this._type = 'cat';
     }
@@ -51,7 +51,7 @@ class Parrot implements IMakesSound {
     private _name : string;
     private _type : string;
 
-    constructor(value) {
+    constructor(value : string) {
         this._name = value;
         this._type = 'parrot';
     }
@@ -124,14 +124,14 @@ class Zoo {
         return this._animals;
     }
 }
-let zoo = new Zoo;
-zoo.addAnimal(new Cat('Smokey'));
-zoo.addAnimal(new Dog('Finn'));
-zoo.addAnimal(new Parrot('Henry'));
-zoo.addAnimal(new Penguin('Skipper'));
+let zooObject = new Zoo;
+zooObject.addAnimal(new Cat('Smokey'));
+zooObject.addAnimal(new Dog('Finn'));
+zooObject.addAnimal(new Parrot('Henry'));
+zooObject.addAnimal(new Penguin('Skipper'));
 
-console.log(zoo)
+console.log(zooObject)
 const el = <HTMLElement>document.querySelector('#target');
-zoo.animals.forEach((animal) => {
+zooObject.animals.forEach((animal) => {
     el.innerHTML += (animal.name + ": " + animal.makeSound() + "<br>");
 });

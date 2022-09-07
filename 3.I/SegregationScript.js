@@ -1,22 +1,22 @@
 "use strict";
-exports.__esModule = true;
-var Admin_1 = require("./Admin");
-var User_1 = require("./User");
-var GoogleBot_1 = require("./GoogleBot");
-var passwordElement = document.querySelector('#password');
-var typePasswordElement = document.querySelector('#typePassword');
-var typeGoogleElement = document.querySelector('#typeGoogle');
-var typeFacebookElement = document.querySelector('#typeFacebook');
-var loginAsAdminElement = document.querySelector('#loginAsAdmin');
-var resetPasswordElement = document.querySelector('#resetPassword');
-var guest = new User_1.User;
-var admin = new Admin_1.Admin;
-var bot = new GoogleBot_1.GoogleBot;
-var loginForm = document.querySelector('#login-form');
-loginForm.addEventListener('submit', function (event) {
+Object.defineProperty(exports, "__esModule", { value: true });
+const Admin_1 = require("./Admin");
+const User_1 = require("./User");
+const GoogleBot_1 = require("./GoogleBot");
+const passwordElement = document.querySelector('#password');
+const typePasswordElement = document.querySelector('#typePassword');
+const typeGoogleElement = document.querySelector('#typeGoogle');
+const typeFacebookElement = document.querySelector('#typeFacebook');
+const loginAsAdminElement = document.querySelector('#loginAsAdmin');
+const resetPasswordElement = document.querySelector('#resetPassword');
+let guest = new User_1.User;
+let admin = new Admin_1.Admin;
+let bot = new GoogleBot_1.GoogleBot;
+const loginForm = document.querySelector('#login-form');
+loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
     //let user = loginAsAdminElement.checked ? admin : guest;
-    var auth = false;
+    let auth = false;
     /* if (user == guest) {
          user.setGoogleToken('secret_token_google');
          user.setFacebookToken('secret_token_fb');
@@ -61,8 +61,8 @@ loginForm.addEventListener('submit', function (event) {
         alert('login failed');
     }
 });
-resetPasswordElement.addEventListener('click', function (event) {
+resetPasswordElement.addEventListener('click', (event) => {
     event.preventDefault();
-    var user = loginAsAdminElement.checked ? admin : guest;
+    let user = loginAsAdminElement.checked ? admin : guest;
     user.resetPassword();
 });

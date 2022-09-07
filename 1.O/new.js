@@ -85,13 +85,13 @@ class Zoo {
         return this._animals;
     }
 }
-let zoo = new Zoo;
-zoo.addAnimal(new Cat('Smokey'));
-zoo.addAnimal(new Dog('Finn'));
-zoo.addAnimal(new Parrot('Henry'));
-zoo.addAnimal(new Penguin('Skipper'));
-console.log(zoo);
+let zooObject = new Zoo;
+zooObject.addAnimal(new Cat('Smokey'));
+zooObject.addAnimal(new Dog('Finn'));
+zooObject.addAnimal(new Parrot('Henry'));
+zooObject.addAnimal(new Penguin('Skipper'));
+console.log(zooObject);
 const el = document.querySelector('#target');
-zoo.animals.forEach((animal) => {
+zooObject.animals.forEach((animal) => {
     el.innerHTML += (animal.name + ": " + animal.makeSound() + "<br>");
 });
